@@ -1,0 +1,17 @@
+.metadata
+bin/
+tmp/
+jars/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+RemoteSystemsTempFiles/
+.loadpath
+.recommenders
+
+# Eclipse Core
+/build
+build/
