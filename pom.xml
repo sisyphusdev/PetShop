@@ -7,9 +7,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>PetShop Maven Webapp</name>
   <url>http://maven.apache.org</url>
-<properties>
-		<spring.version>4.0.1.RELEASE</spring.version>
-	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -21,23 +18,32 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>${spring.version}</version>
+			<version>4.0.1.RELEASE</version>
 		</dependency>
  
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>${spring.version}</version>
+			<version>4.0.1.RELEASE</version>
 		</dependency>
  
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${spring.version}</version>
+			<version>4.0.1.RELEASE</version>
 		</dependency>
  
 	</dependencies>
   <build>
     <finalName>PetShop</finalName>
+        <plugins>
+      <plugin>
+      <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
   </build>
 </project>
