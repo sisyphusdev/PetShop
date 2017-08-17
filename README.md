@@ -6,7 +6,8 @@ Prerequisite
 ```
 Apache Tomcat 7
 JDK 1.8
-maven
+Maven
+MySQL server
 ```
 
 Project setup in Eclipse
@@ -18,4 +19,18 @@ Project setup in Eclipse
 3-Add project to server.
 4-Deploy server
 5-Access localhost:8080/PetShop/
+```
+
+MySQL config
+```
+port: 3306
+database: sisyphusdev
+Username: root
+Password: root
+```
+
+MySQL table
+```
+mysql -u root -p
+create database sisyphusdev;
 ```
